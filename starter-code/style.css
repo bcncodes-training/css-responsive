@@ -1,9 +1,5 @@
-body {
-  background: #f9f9f9;
-  margin: 0;
-  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif;
-}
-.containerHeader{max-width: 1100px;margin: 0 auto;}
+body {background: #f9f9f9;margin: 0;font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif;color: #4b4b4bb3;}
+.containerHeader,.containerMain{max-width: 1100px;margin: 0 auto;}
 #header{background-color: #fff;/*! border-bottom: 1px solid #e8e8e8; */}
 .firstBar{height: 30px;max-width: 100vw;display: flex;flex-direction: row;}
 .firstBar>*{height: 90%;width: 84%;/*! display: inline-block */}
@@ -29,3 +25,97 @@ ul>li>a,#profile > a{text-decoration: none;color: inherit;}
 #navLeft{background-image: url(images/arrow-prev.png);}
 #navRight{background-image: url(images/arrow-next.png);}
 #navRight,#navLeft{width: 25px;background-repeat: no-repeat;background-size: 20px;padding: 0 0 0 20px;margin-top: 15px;background-position: center;border-top: 1px solid #e8e8e8;}
+h3{font-weight: normal;color: #4b4b4b;margin: 0;}
+.mainHeader,div.mainSection>*,aside.mainSection>*{background-color: #fff;}
+section.mainSection{display: flex;flex-direction: row;}
+aside.mainSection{width: 30%;margin-left: 20px;}
+.mainHeader{text-align: center;display: inline-block;width: 100%;padding: 5px 0 0 0;position: relative;display: none;/*! height: 50px; */}
+.headerContent>*{display: inline-block;}
+.headerContent > h4{margin: 10px 5px 0 0;color: #000;}
+div.mail{margin-left: 10px;}
+.headerContent{width: 95%;}
+div.mainSection{width: 100%;}
+div.mainSection{display: flex;flex-direction: column;}
+.msHeader{display: flex;justify-content: space-between;padding: 10px 20px;flex-direction: row;}
+p{text-align: left;padding: 0 20px;margin: 10px 0;}
+aside.mainSection{display: none;flex-direction: column;}
+.offer > .msContent{text-align: center;}
+.offer > .msContent > a,a.mail{/*! height: 40px; */background-color: #da552f;color: #fff;text-decoration: none;font-weight: bold;padding: 0px 10px 5px 10px;border-radius: 3px;display: inline-block;margin: 15px;}
+a.mail{margin: 5px;}
+.offer > .msContent > a>div:nth-child(1){transform: rotate(-30deg)scaleX(1.5)translate(0px, 5px);display: inline-block;font-size: 23px;margin-right: 10px;}
+.offer > .msContent > a> div:nth-child(2){display: inline-block;margin-bottom: 5px;}
+.close {
+  position: relative;
+  right: 5px;
+  top: 5px;
+  width: 20px;
+  height: 20px;
+  opacity: 0.3;
+}
+.close:hover {
+  opacity: 1;
+}
+.close:before, .close:after {
+  position: absolute;
+  left: 10px;
+  content: ' ';
+  height: 20px;
+  width: 2px;
+  background-color: #333;
+}
+.close:before {
+  transform: rotate(45deg);
+}
+.close:after {
+  transform: rotate(-45deg);
+}
+.mainHeader .close{float: right;right: 30px !important;top: -28px !important;}
+
+.popular{/*! height: 20px; */}
+.today{/*! height: 20px; */}
+.offer{/*! height: 20px; */}
+.upcomming{height: 20px;}
+
+/* PHONE LANDSCAPE VERSION */
+@media only screen and (min-width: 320px) and (orientation : landscape) {
+  .mainHeader,div.mainSection>*,aside.mainSection>*{margin: 0;}
+  .containerMain{padding: 0;}
+  #header{padding: 0 10px;}
+}
+/* PHONE PORTRAIT VERSION */
+@media only screen and (min-width: 320px) and (orientation : portrait) {
+  .mainHeader,div.mainSection>*,aside.mainSection>*{margin: 0;border: none;}
+  .containerMain{padding: 0;}
+  #header{padding: 0 10px;}
+}
+/* PHONE2 LANDSCAPE VERSION */
+@media only screen and (min-width: 480px) and (orientation : landscape) {
+  .mainHeader,div.mainSection>*,aside.mainSection>*{border: 1px solid #e8e8e8;background-color: #fff;margin-top: 20px;}
+  .containerMain,#header{padding: 0 10px;}
+  .mainHeader{display: inline-block;}
+}
+/* PHONE2 PORTRAIT VERSION */
+@media only screen and (min-width: 480px) and (orientation : portrait) {
+  .mainHeader,div.mainSection>*,aside.mainSection>*{border: 1px solid #e8e8e8;background-color: #fff;margin-top: 20px;}
+  .containerMain,#header{padding: 0 10px;}
+  .mainHeader{display: inline-block;}
+}
+/* TABLET LANDSCAPE VERSION - not work, are the same as desktop */
+@media only screen and (min-width: 768px) and (orientation : landscape) {
+  .containerMain{padding: 0 20px;}
+  #header{padding: 0 10px;}
+}
+/* TABLET PORTRAIT VERSION */
+@media only screen and (min-width: 768px) and (orientation : portrait) {
+  .containerMain{padding: 0 20px;}
+  #header{padding: 0 10px;}
+}
+/* DESKTOP VERSION */
+@media only screen and (min-width: 980px) {
+  div.mainSection{width: 70%;}
+  aside.mainSection{display: flex;}
+  #header{padding: 0;}
+}
+@media only screen and (min-width: 1100px) {
+ .containerMain,#header{padding: 0;}
+}
