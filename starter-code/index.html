@@ -5,9 +5,287 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>CSS Lab | Responsive Cloning | Product Hunt</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
+  <header>
+    <nav>
+      <div id='fila1Nav'>
+        <img id='imgLogoP' src="./images/logo.png" alt="">
+        <div id='search'>
+          <img id='imgSearch' src="./images/search.png" alt="">
+          <p id='searchText'>Discover your next favorite thing...</p>
+        </div>
+        <p id='login'>... Login</p>
+      </div>
+      <div id='fila2Nav'>
+        <ul>
+          <li><a href=""></a>Home</li>
+          <li><a href=""></a>Tech</li>
+          <li><a href=""></a>Games</li>
+          <li><a href=""></a>Podcasts</li>
+          <li><a href=""></a>Books</li>
+          <li><a href=""></a>Bots</li>
+          <li><a href=""></a>Developer Tools</li>
+          <li><a href=""></a>iMessage Apps</li>
+          <li><a href=""></a>iPhone</li>
+          <li><a href=""></a>Photography Tools</li>
+        </ul>
+        <div id='flechas'>
+          <img class='fle-desp' src="./images/arrow-prev.png" alt="">
+          <img class='fle-desp' src="./images/arrow-next.png" alt="">
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section id='welcome'>
+      <div id='welcome1'>
+        <div>
+          <img id='imgHand' src="./images/1f44b_.png" alt="">
+          <span id='t1Welcome'>Welcome to Product Hunt</span>
+          <span id='t2Welcome'>Get the best new products in your inbox, daily.</span>
+        </div>
+        <img class='imgClose' src="./images/close.png" alt="">
+      </div>
+      <div id='welcome2'>
+        <span id='email'>Your email</span>
+        <span id='subscribe'>SUBSCRIBE</span>
+      </div>
+      <img class='imgClose' src="./images/close.png" alt="">
+    </section>
+    <div id='mainBody'>
+      <div id='leftMainBody'>
+
+        <section id='popular'>
+          <div class='cabeceraPopular'>
+            <div class='tituloCabeceraPopular'>
+              <p>Popular this week</p>
+              <img class='imgClose' src="./images/close.png" alt="">
+            </div>
+            <div class='linea'></div>          
+          </div>
+          <div class='cuerpo'>
+            <div class='lineaCuerpo'>
+              <img class='imgPopular' src="./images/popular-this-week/app-1.png" alt="">
+              <div class='txtCuerpoMedio'>
+                  <span>Duolingo Bots</span>
+                  <span>AI-powered characters to teach language conversation</span>
+                  <div>
+                    <div class='casillaVotos'>
+                      <img class='imgVotes' src="./images/votes.png" alt="">
+                      <p>1460</p>
+                    </div>
+                    <div class='casillaComments'>
+                      <img class='imgComments' src="./images/comments.png" alt="">
+                      <p>49</p>    
+                    </div>
+                  </div>
+              </div>
+              <span id='pIphone'><span>IPHONE</span><span> +2</span></span>
+            </div>
+            <div class='linea'></div>
+          </div>
+          <div class='cuerpo'>
+            <div class='lineaCuerpo'>
+              <img class='imgPopular' src="./images/popular-this-week/app-2.png" alt="">
+              <div class='txtCuerpoMedio'>
+                  <span>Tribe 2.0</span>
+                  <span>Introducing Augmented Messaging</span>
+                  <div>
+                    <div class='casillaVotos'>
+                      <img class='imgVotes' src="./images/votes.png" alt="">
+                      <p>1465</p>
+                    </div>
+                    <div class='casillaComments'>
+                      <img class='imgComments' src="./images/comments.png" alt="">
+                      <p>188</p>    
+                    </div>
+                  </div>
+              </div>
+              <span id='pIphone'><span>ANDROID</span><span> +4</span></span>
+            </div>
+            <div class='linea'></div>
+          </div>
+          <div class='cuerpo'>
+            <div class='lineaCuerpo'>
+              <img class='imgPopular' src="./images/popular-this-week/app-3.png" alt="">
+              <div class='txtCuerpoMedio'>
+                  <span style="color:gray">Workplace by Facebook</span>
+                  <span>Connect everyone in your company and turn ideaas into action</span>
+                  <div>
+                    <div class='casillaVotos'>
+                      <img class='imgVotes' src="./images/votes.png" alt="">
+                      <p>1003</p>
+                    </div>
+                    <div class='casillaComments'>
+                      <img class='imgComments' src="./images/comments.png" alt="">
+                      <p>80/p>    
+                    </div>
+                  </div>
+              </div>
+              <span id='pIphone'><span>ANDROID</span><span> +2</span></span>
+            </div>
+            <div id='showMore'>
+              <img src="./images/arrow-down.png" alt="">
+              <span>SHOW MORE</span>
+            </div>
+          </div>
+        </section>
+        <section id='today'>
+          <div class='cabeceraToday'>
+              <div class='tituloCabeceraToday'>
+                <span>Today</span>
+                <div>
+                  <span>POPULAR</span>
+                  <span id='newest'>| NEWEST</span>
+                </div>
+              </div>
+              <div class='linea'></div>          
+          </div>
+          <div class='cuerpo'>
+            <div class='lineaCuerpo'>
+              <img class='imgPopular' src="./images/today/app-1.png" alt="">
+              <div class='txtCuerpoMedio'>
+                  <span>Sprayscape</span>
+                  <span>A perfectly imperfect VR-ish camera experiment by Google</span>
+                  <div>
+                    <div class='casillaVotos'>
+                      <img class='imgVotes' src="./images/votes.png" alt="">
+                      <p>82</p>
+                    </div>
+                    <div class='casillaComments'>
+                      <img class='imgComments' src="./images/comments.png" alt="">
+                      <p>8</p>    
+                    </div>
+                  </div>
+              </div>
+              <span id='pIphone'><span>ANDROID</span><span> +3</span></span>
+            </div>
+            <div class='linea'></div>
+          </div>    
+          <div class='cuerpo'>
+              <div class='lineaCuerpo'>
+                <img class='imgPopular' src="./images/today/app-2.png" alt="">
+                <div class='txtCuerpoMedio'>
+                    <span>Ask Gary Vee</span>
+                    <span>The unofficial Gary Vee persona chatbot on Messenger!</span>
+                    <div>
+                      <div class='casillaVotos'>
+                        <img class='imgVotes' src="./images/votes.png" alt="">
+                        <p>21</p>
+                      </div>
+                      <div class='casillaComments'>
+                        <img class='imgComments' src="./images/comments.png" alt="">
+                        <p>9</p>    
+                      </div>
+                    </div>
+                </div>
+                <span id='pIphone'><span>GET SHIT DONE</span><span> +1</span></span>
+              </div>
+              <div class='linea'></div>
+          </div>    
+          <div class='cuerpo'>
+            <div class='lineaCuerpo'>
+              <img class='imgPopular' src="./images/today/app-3.png" alt="">
+              <div class='txtCuerpoMedio'>
+                  <span>The Electron Wheel</span>
+                  <span>Turn your standard bicycle into an electric bike.</span>
+                  <div>
+                    <div class='casillaVotos'>
+                      <img class='imgVotes' src="./images/votes.png" alt="">
+                      <p>23</p>
+                    </div>
+                    <div class='casillaComments'>
+                      <img class='imgComments' src="./images/comments.png" alt="">
+                      <p>2</p>    
+                    </div>
+                  </div>
+              </div>
+              <span id='pIphone'><span></span><span></span></span>
+            </div>
+            <div class='linea'></div>
+          </div>    
+        </section>
+      </div>
+      
+      <div id='rightMainBody'>
+        <aside>
+          <section id='asideFirst'>
+            <div class='cuerpoAsideFirst'>
+              <div class='tituloCuerpoAsideFirst'>
+                <p>Kittybot for Slack.</p>
+                <img class='imgClose' src="./images/close.png" alt="">
+              </div>      
+              <p>A friendly fellyne that sends you cool new things.</p>
+              <div id='almohadilla'>
+                <img id='imgAlmohadilla' src="./images/almohadilla.png" alt="">
+                <p>ADD KITTYBOT TO SLACK</p>
+              </div>  
+            </div>
+          </section>
+          <section id='asideSecond'>
+            <div class='cuerpoAsideSecond'>
+              <div class='tituloCuerpoAsideSecond'>
+                <p>UPCOMING LIVE CHATS</p>
+                <div class='linea'></div>
+              </div>      
+
+              <div class='chateros'>
+                <img class='imgCircular' src="./images/perfil-circular.png" alt="">
+                <div class='cuerpoChatero'>
+                  <p>Adam Besvinick</p>
+                  <p>VC at Deep Fork Capital</p>
+                  <p>REMIND ME</p>
+                </div>
+              </div>
+              <div class='chateros'>
+                <img class='imgCircular' src="./images/perfil-circular.png" alt="">
+                <div class='cuerpoChatero'>
+                  <p>Adam Besvinick</p>
+                  <p>VC at Deep Fork Capital</p>
+                  <p>REMIND ME</p>
+                </div>
+              </div>
+              <div class='chateros'>
+                <img class='imgCircular' src="./images/perfil-circular.png" alt="">
+                <div class='cuerpoChatero'>
+                  <p>Adam Besvinick</p>
+                  <p>VC at Deep Fork Capital</p>
+                  <p>REMIND ME</p>
+                </div>
+              </div>
+              <div class='chateros'>
+                <img class='imgCircular' src="./images/perfil-circular.png" alt="">
+                <div class='cuerpoChatero'>
+                  <p>Adam Besvinick</p>
+                  <p>VC at Deep Fork Capital</p>
+                  <p>REMIND ME</p>
+                </div>
+              </div>
+              <div class='chateros'>
+                <img class='imgCircular' src="./images/perfil-circular.png" alt="">
+                <div class='cuerpoChatero'>
+                  <p>Adam Besvinick</p>
+                  <p>VC at Deep Fork Capital</p>
+                  <p>REMIND ME</p>
+                </div>
+              </div>
+
+              <div class='pieCuerpoAsideSecond'>
+                  <div class='linea'></div>
+                  <p>SEE MORE</p>
+              </div>      
+  
+            </div>
+          </section>
+
+        </aside>
+      </div>
+      
+    </div>
+  </main>
+
   
 </body>
 </html>
